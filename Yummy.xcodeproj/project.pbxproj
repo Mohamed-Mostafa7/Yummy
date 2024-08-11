@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E93335D12C68E0150065C061 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93335D02C68E0150065C061 /* HomeViewController.swift */; };
 		E96D4F802C63B1730012672A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D4F7F2C63B1730012672A /* AppDelegate.swift */; };
 		E96D4F822C63B1730012672A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D4F812C63B1730012672A /* SceneDelegate.swift */; };
 		E96D4F872C63B1730012672A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E96D4F862C63B1730012672A /* Base */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E93335D02C68E0150065C061 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E96D4F7C2C63B1730012672A /* Yummy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96D4F7F2C63B1730012672A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E96D4F812C63B1730012672A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E93335CF2C68DFF60065C061 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E93335D02C68E0150065C061 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		E96D4F732C63B1730012672A = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		E96D4F942C63D0DC0012672A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E93335CF2C68DFF60065C061 /* Home */,
 				E96D4F962C63D0FE0012672A /* Onboarding */,
 			);
 			path = Views;
@@ -192,6 +203,7 @@
 				E96D4F822C63B1730012672A /* SceneDelegate.swift in Sources */,
 				E96D4F982C63D1340012672A /* OnboardingViewController.swift in Sources */,
 				E96D4F9B2C63D49D0012672A /* UIView+Extention.swift in Sources */,
+				E93335D12C68E0150065C061 /* HomeViewController.swift in Sources */,
 				E96D4F9F2C63D8390012672A /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

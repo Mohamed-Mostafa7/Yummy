@@ -23,6 +23,9 @@
 		E9EF2CCD2C6915B000DB0CA3 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EF2CCC2C6915B000DB0CA3 /* DishCategory.swift */; };
 		E9EF2CCF2C6925EE00DB0CA3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EF2CCE2C6925EE00DB0CA3 /* String+Extension.swift */; };
 		E9EF2CD22C6934D300DB0CA3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EF2CD12C6934D300DB0CA3 /* CardView.swift */; };
+		E9EF2CD62C6A55F800DB0CA3 /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EF2CD42C6A55F800DB0CA3 /* DishPortraitCollectionViewCell.swift */; };
+		E9EF2CD72C6A55F800DB0CA3 /* DishPortraitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EF2CD52C6A55F800DB0CA3 /* DishPortraitCollectionViewCell.xib */; };
+		E9EF2CD92C6A596200DB0CA3 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EF2CD82C6A596200DB0CA3 /* Dish.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		E9EF2CCC2C6915B000DB0CA3 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
 		E9EF2CCE2C6925EE00DB0CA3 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		E9EF2CD12C6934D300DB0CA3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E9EF2CD42C6A55F800DB0CA3 /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
+		E9EF2CD52C6A55F800DB0CA3 /* DishPortraitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishPortraitCollectionViewCell.xib; sourceTree = "<group>"; };
+		E9EF2CD82C6A596200DB0CA3 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,7 @@
 			children = (
 				E96D4F9C2C63D5F60012672A /* OnboardingSlide.swift */,
 				E9EF2CCC2C6915B000DB0CA3 /* DishCategory.swift */,
+				E9EF2CD82C6A596200DB0CA3 /* Dish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,6 +175,7 @@
 		E9EF2CC62C69130400DB0CA3 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				E9EF2CD32C6A55BA00DB0CA3 /* DishPortraitCollectionViewCell */,
 				E9EF2CC72C69132D00DB0CA3 /* CategoryCollectionViewCell */,
 			);
 			path = CollectionViewCells;
@@ -188,6 +196,15 @@
 				E9EF2CD12C6934D300DB0CA3 /* CardView.swift */,
 			);
 			path = CardView;
+			sourceTree = "<group>";
+		};
+		E9EF2CD32C6A55BA00DB0CA3 /* DishPortraitCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E9EF2CD42C6A55F800DB0CA3 /* DishPortraitCollectionViewCell.swift */,
+				E9EF2CD52C6A55F800DB0CA3 /* DishPortraitCollectionViewCell.xib */,
+			);
+			path = DishPortraitCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +269,7 @@
 			files = (
 				E9EF2CCA2C69135A00DB0CA3 /* CategoryCollectionViewCell.xib in Resources */,
 				E96D4F892C63B1750012672A /* Assets.xcassets in Resources */,
+				E9EF2CD72C6A55F800DB0CA3 /* DishPortraitCollectionViewCell.xib in Resources */,
 				E96D4F8C2C63B1750012672A /* Base in Resources */,
 				E96D4F872C63B1730012672A /* Base in Resources */,
 			);
@@ -317,6 +335,8 @@
 				E9EF2CCF2C6925EE00DB0CA3 /* String+Extension.swift in Sources */,
 				E9EF2CD22C6934D300DB0CA3 /* CardView.swift in Sources */,
 				E96D4F9F2C63D8390012672A /* OnboardingCollectionViewCell.swift in Sources */,
+				E9EF2CD92C6A596200DB0CA3 /* Dish.swift in Sources */,
+				E9EF2CD62C6A55F800DB0CA3 /* DishPortraitCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

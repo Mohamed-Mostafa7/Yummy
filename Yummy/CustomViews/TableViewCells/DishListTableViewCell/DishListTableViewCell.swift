@@ -20,10 +20,10 @@ class DishListTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected stat
     }
     
@@ -31,6 +31,12 @@ class DishListTableViewCell: UITableViewCell {
         dishImageView.kf.setImage(with: dish.image?.asURL)
         titleLable.text = dish.name
         descriptionLable.text = dish.description
+    }
+    
+    func setup(order: Order) {
+        dishImageView.kf.setImage(with: order.dish?.image?.asURL)
+        titleLable.text = order.dish?.name
+        descriptionLable.text = order.name
     }
     
 }

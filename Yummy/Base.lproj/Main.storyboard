@@ -281,8 +281,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Yummy" id="6Jv-lh-Mf9">
+                        <barButtonItem key="backBarButtonItem" title=" " id="PjH-22-eEp"/>
                         <barButtonItem key="rightBarButtonItem" image="cart.circle.fill" catalog="system" id="fHI-Lm-kNx">
                             <color key="tintColor" red="0.88019192219999998" green="0.22537678480000001" blue="0.0030236775059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="t8T-68-UwU" kind="show" id="VaL-bE-TrK"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -294,6 +298,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Py1-pY-UQF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1977.8625954198471" y="9.8591549295774659"/>
+        </scene>
+        <!--List Orders View Controller-->
+        <scene sceneID="eAG-av-yhw">
+            <objects>
+                <viewController storyboardIdentifier="ListOrdersViewController" id="t8T-68-UwU" customClass="ListOrdersViewController" customModule="Yummy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x4o-6j-0Yk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cD8-8B-E44">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eOi-ph-GAe"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cD8-8B-E44" firstAttribute="top" secondItem="eOi-ph-GAe" secondAttribute="top" id="56l-CG-pDl"/>
+                            <constraint firstItem="eOi-ph-GAe" firstAttribute="trailing" secondItem="cD8-8B-E44" secondAttribute="trailing" id="ByB-4L-h36"/>
+                            <constraint firstItem="cD8-8B-E44" firstAttribute="leading" secondItem="eOi-ph-GAe" secondAttribute="leading" id="uMu-7r-7BW"/>
+                            <constraint firstAttribute="bottom" secondItem="cD8-8B-E44" secondAttribute="bottom" id="wXl-SF-yLi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zHO-eR-AhM"/>
+                    <connections>
+                        <outlet property="tableView" destination="cD8-8B-E44" id="Ttz-2Q-Wxs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8V-Xc-xtc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2003.8167938931297" y="695.77464788732402"/>
         </scene>
         <!--Dish Details View Controller-->
         <scene sceneID="xnd-NY-iyk">

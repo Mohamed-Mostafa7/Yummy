@@ -29,6 +29,7 @@
 		E9EF2CDD2C6A71E400DB0CA3 /* DishLandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EF2CDB2C6A71E400DB0CA3 /* DishLandscapeCollectionViewCell.swift */; };
 		E9EF2CDE2C6A71E400DB0CA3 /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EF2CDC2C6A71E400DB0CA3 /* DishLandscapeCollectionViewCell.xib */; };
 		E9EF2CE12C6ACF6600DB0CA3 /* DishDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EF2CE02C6ACF6600DB0CA3 /* DishDetailsViewController.swift */; };
+		E9EF2CE32C6AD5D700DB0CA3 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EF2CE22C6AD5D700DB0CA3 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		E9EF2CDB2C6A71E400DB0CA3 /* DishLandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		E9EF2CDC2C6A71E400DB0CA3 /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
 		E9EF2CE02C6ACF6600DB0CA3 /* DishDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailsViewController.swift; sourceTree = "<group>"; };
+		E9EF2CE22C6AD5D700DB0CA3 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			children = (
 				E96D4F9A2C63D49D0012672A /* UIView+Extention.swift */,
 				E9EF2CCE2C6925EE00DB0CA3 /* String+Extension.swift */,
+				E9EF2CE22C6AD5D700DB0CA3 /* UIViewController+Extension.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9EF2CE32C6AD5D700DB0CA3 /* UIViewController+Extension.swift in Sources */,
 				E9EF2CCB2C69135A00DB0CA3 /* CategoryCollectionViewCell.swift in Sources */,
 				E96D4F9D2C63D5F60012672A /* OnboardingSlide.swift in Sources */,
 				E96D4F802C63B1730012672A /* AppDelegate.swift in Sources */,

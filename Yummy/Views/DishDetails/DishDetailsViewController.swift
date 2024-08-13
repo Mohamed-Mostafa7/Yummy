@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DishDetailsViewController: UIViewController {
     
@@ -15,12 +16,20 @@ class DishDetailsViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     
-
+    var dish: Dish!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setupViewDetails()
+        
+    }
+    
+    private func setupViewDetails() {
+        dishImageView.kf.setImage(with: dish.image?.asURL)
+        titleLabel.text = dish.name
+        caloriesLabel.text = dish.formatedCalories
+        descriptionLabel.text = dish.description
     }
     
     @IBAction func placeOrderButtonClicked(_ sender: UIButton) {

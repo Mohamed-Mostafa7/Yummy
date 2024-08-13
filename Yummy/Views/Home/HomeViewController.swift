@@ -53,6 +53,7 @@ class HomeViewController: UIViewController {
 
 }
 
+//MARK: - Collection view delegate and data source.
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -89,7 +90,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == categoryCollectionView {
-            
+            let controller = ListDishesViewController.instantiate()
+            controller.category = categories[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
         } else {
             let controller = DishDetailsViewController.instantiate()
             controller.dish = collectionView == popularCollectionView ? populars[indexPath.row] : specials[indexPath.row]

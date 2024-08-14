@@ -42,6 +42,17 @@ class HomeViewController: UIViewController {
         specialsCollectinView.delegate = self
         specialsCollectinView.dataSource = self
         
+        NetworkService.shared.myFirstRequest { result in
+            switch result {
+            case .success(let data):
+                for dish in data {
+                    print(dish.name ?? "Not Found")
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
         registerCells()
     }
     

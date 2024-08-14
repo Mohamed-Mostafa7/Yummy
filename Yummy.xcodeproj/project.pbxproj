@@ -21,6 +21,7 @@
 		E9A7E3B82C6BBF4A0053EA7B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7E3B72C6BBF4A0053EA7B /* NetworkService.swift */; };
 		E9A7E3BA2C6BC0E10053EA7B /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7E3B92C6BC0E10053EA7B /* Route.swift */; };
 		E9A7E3BC2C6BC2CA0053EA7B /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7E3BB2C6BC2CA0053EA7B /* Method.swift */; };
+		E9A7E3BE2C6C20660053EA7B /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7E3BD2C6C20660053EA7B /* AppError.swift */; };
 		E9EF2CCA2C69135A00DB0CA3 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EF2CC92C69135A00DB0CA3 /* CategoryCollectionViewCell.xib */; };
 		E9EF2CCB2C69135A00DB0CA3 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EF2CC82C69135A00DB0CA3 /* CategoryCollectionViewCell.swift */; };
 		E9EF2CCD2C6915B000DB0CA3 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EF2CCC2C6915B000DB0CA3 /* DishCategory.swift */; };
@@ -59,6 +60,7 @@
 		E9A7E3B72C6BBF4A0053EA7B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E9A7E3B92C6BC0E10053EA7B /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		E9A7E3BB2C6BC2CA0053EA7B /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		E9A7E3BD2C6C20660053EA7B /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		E9EF2CC82C69135A00DB0CA3 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		E9EF2CC92C69135A00DB0CA3 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		E9EF2CCC2C6915B000DB0CA3 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				E9A7E3B72C6BBF4A0053EA7B /* NetworkService.swift */,
 				E9A7E3B92C6BC0E10053EA7B /* Route.swift */,
 				E9A7E3BB2C6BC2CA0053EA7B /* Method.swift */,
+				E9A7E3BD2C6C20660053EA7B /* AppError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				E9EF2CCF2C6925EE00DB0CA3 /* String+Extension.swift in Sources */,
 				E9EF2CD22C6934D300DB0CA3 /* CardView.swift in Sources */,
 				E9EF2CEC2C6B77B800DB0CA3 /* ListDishesViewController.swift in Sources */,
+				E9A7E3BE2C6C20660053EA7B /* AppError.swift in Sources */,
 				E96D4F9F2C63D8390012672A /* OnboardingCollectionViewCell.swift in Sources */,
 				E9EF2CD92C6A596200DB0CA3 /* Dish.swift in Sources */,
 				E9EF2CD62C6A55F800DB0CA3 /* DishPortraitCollectionViewCell.swift in Sources */,

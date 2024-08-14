@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class HomeViewController: UIViewController {
     
@@ -13,25 +14,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var popularCollectionView: UICollectionView!
     @IBOutlet weak var specialsCollectinView: UICollectionView!
     
-    var categories: [DishCategory] = [
-        .init(id: "1", name: "dish 1", image: "https://picsum.photos/100/200"),
-        .init(id: "1", name: "dish 2", image: "https://picsum.photos/100/200"),
-        .init(id: "1", name: "dish 3", image: "https://picsum.photos/100/200"),
-        .init(id: "1", name: "dish 4", image: "https://picsum.photos/100/200"),
-        .init(id: "1", name: "dish 5", image: "https://picsum.photos/100/200")
-    ]
-    
-    var populars: [Dish] = [
-        .init(id: "1", name: "Garri", description: "This is I have ever tested", image: "https://picsum.photos/100/200", calories: 34),
-        .init(id: "1", name: "Indomie", description: "This is I have ever tasted in my life", image: "https://picsum.photos/100/200", calories: 134),
-        .init(id: "1", name: "Pizza", description: "This is I have ever tested", image: "https://picsum.photos/100/200", calories: 1424),
-    ]
-    
-    var specials: [Dish] = [
-        .init(id: "1", name: "Fried Plantain", description: "This is I have ever tested", image: "https://picsum.photos/100/200", calories: 34),
-        .init(id: "1", name: "Indomie", description: "This is I have ever tasted in my life", image: "https://picsum.photos/100/200", calories: 134),
-        .init(id: "1", name: "Pizza", description: "This is I have ever tested", image: "https://picsum.photos/100/200", calories: 1424),
-    ]
+    var categories: [DishCategory] = []
+    var populars: [Dish] = []
+    var specials: [Dish] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,18 +27,27 @@ class HomeViewController: UIViewController {
         specialsCollectinView.delegate = self
         specialsCollectinView.dataSource = self
         
-        NetworkService.shared.myFirstRequest { result in
+        registerCells()
+        ProgressHUD.colorAnimation = .red
+        ProgressHUD.animate()
+        
+        NetworkService.shared.fetchAllCategories { [weak self] result in
             switch result {
-            case .success(let data):
-                for dish in data {
-                    print(dish.name ?? "Not Found")
+            case .success(let allDishes):
+                ProgressHUD.dismiss()
+                self?.categories = allDishes.categories ?? []
+                self?.populars = allDishes.populars ?? []
+                self?.specials = allDishes.specials ?? []
+                DispatchQueue.main.async{
+                    self?.categoryCollectionView.reloadData()
+                    self?.popularCollectionView.reloadData()
+                    self?.specialsCollectinView.reloadData()
                 }
-            case .failure(let error):
+            case.failure(let error):
                 print(error.localizedDescription)
+                ProgressHUD.error(error.localizedDescription)
             }
         }
-        
-        registerCells()
     }
     
     private func registerCells() {

@@ -24,7 +24,7 @@ class ListDishesViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        title = category.name
+        title = category.title
         registerCells()
         
     }

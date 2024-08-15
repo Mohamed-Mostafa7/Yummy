@@ -12,14 +12,21 @@ struct NetworkService {
     static let shared = NetworkService()
     private init() {}
     
+    // MARK: - Fetch all categories
     func fetchAllCategories(completion: @escaping(Result<AllDishes, Error>) -> Void){
         requests(route: .fetchAllCategories, method: .get, completion: completion)
     }
     
+    // MARK: - Place order
     func placeOrder(dishId: String, name: String, completion: @escaping(Result<Order, Error>) -> Void) {
         let params = ["name": name]
         
         requests(route: .placeOrder(dishId), method: .post, parameters: params, completion: completion)
+    }
+    
+    // MARK: - fetch category dishes
+    func fetchCategorydishes(categoryId: String, completion: @escaping(Result<[Dish], Error>) -> Void){
+        requests(route: .fetchCategoryDishes(categoryId), method: .get, completion: completion)
     }
     
     private func requests<T: Codable>(route: Route,

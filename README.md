@@ -4,7 +4,7 @@
   <img src="https://github.com/user-attachments/assets/463f66e0-6f00-436b-a8b1-54f0f8cdbd8b" alt="Products Viewr logo" width="30%">
 </p>
 
-  Contacts is an app that allows the user to search for theier favourite foods in a wide varity of food types all over the world, see some information and about the food
+  Yummy is an app that allows the user to search for their favorite foods in a wide variety of food types all over the world, see some information and about the food
   and order it.
 
 ## Installation
@@ -24,10 +24,10 @@ cd Yummy
 
 ## Features
 
-- See onbaordin screens that give you some hints about the app the first Time you use it.
+- See onbaording screens that give you some hints about the app the first Time you use it.
 - Search for the dish you want in different section of the app.
 - loading is smooth so you can get a good user experience.
-- Oreder your favourite app once you find it.
+- Order your favorite app once you find it.
   
 ## Screenshots
 <p align="Center">
